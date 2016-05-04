@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class StaticPgesControllerTest < ActionController::TestCase
+class StaticPagesControllerTest < ActionController::TestCase
 
   def setup
     @base_title = "Ruby on Rails Tutorial Sample App"
@@ -9,7 +9,7 @@ class StaticPgesControllerTest < ActionController::TestCase
   test "should get home" do
     get :home
     assert_response :success
-    assert_select "title", "#{@base_title}"
+    assert_select "title", "Home | #{@base_title}"
   end
 
   test "should get help" do
